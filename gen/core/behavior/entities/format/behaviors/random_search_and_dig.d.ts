@@ -1,0 +1,26 @@
+import { Priority as Priority0 } from './types/priority';
+import { SpeedMultiplier as SpeedMultiplier0 } from './types/speed_multiplier';
+import { Number2 as Number20 } from './../../../../general/vectors/number2';
+import { Trigger as Trigger0 } from './../types/trigger';
+import { Reference as Reference0 } from './../../../../general/block/reference';
+export type RandomSearchAndDig = {
+	priority?: Priority0;
+	speed_multiplier?: SpeedMultiplier0;
+	cooldown_range?: Number20;
+	digging_duration_range?: Number20;
+	find_valid_position_retries?: number;
+	goal_radius?: number;
+	item_table?: string;
+	on_digging_start?: Trigger0;
+	on_fail_during_digging?: Trigger0;
+	on_fail_during_searching?: Trigger0;
+	on_item_found?: Trigger0;
+	on_searching_start?: Trigger0;
+	on_success?: Trigger0;
+	search_range_xz?: number;
+	search_range_y?: number;
+	spawn_item_after_seconds?: number;
+	spawn_item_pos_offset?: number;
+	target_blocks?: Array<Reference0>;
+	target_dig_position_offset?: number;
+};

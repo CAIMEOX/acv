@@ -1,0 +1,20 @@
+import { Priority as Priority0 } from './types/priority';
+import { SpeedMultiplier as SpeedMultiplier0 } from './types/speed_multiplier';
+import { Descriptor as Descriptor0 } from './../../../../general/item/descriptor';
+import { SoundEvent as SoundEvent0 } from './../../../../general/sound_event';
+import { Trigger as Trigger0 } from './../types/trigger';
+export type LayEgg = {
+	priority?: Priority0;
+	speed_multiplier?: SpeedMultiplier0;
+	allow_laying_from_below?: boolean;
+	egg_type?: Descriptor0;
+	goal_radius?: number;
+	lay_egg_sound?: SoundEvent0;
+	lay_seconds?: number;
+	on_lay?: Trigger0;
+	search_height?: number;
+	search_range?: number;
+	target_blocks?: Array<Descriptor0>;
+	target_materials_above_block?: 'Air' | 'Any' | 'Lava' | 'Water';
+	use_default_animation?: boolean;
+};

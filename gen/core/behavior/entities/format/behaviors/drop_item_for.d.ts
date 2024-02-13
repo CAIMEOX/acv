@@ -1,0 +1,26 @@
+import { Priority as Priority0 } from './types/priority';
+import { SpeedMultiplier as SpeedMultiplier0 } from './types/speed_multiplier';
+import { EntityTypes as EntityTypes0 } from './../types/entity_types';
+import { Trigger as Trigger0 } from './../types/trigger';
+import { Number3 as Number30 } from './../../../../general/vectors/number3';
+import { RangeNumberType as RangeNumberType0 } from './../types/range_number_type';
+export type DropItemFor = {
+	priority?: Priority0;
+	speed_multiplier?: SpeedMultiplier0;
+	entity_types?: EntityTypes0;
+	cooldown?: number;
+	drop_item_chance?: number;
+	goal_radius?: number;
+	loot_table?: string;
+	max_head_look_at_height?: number;
+	minimum_teleport_distance?: number;
+	offering_distance?: number;
+	on_drop_attempt?: Trigger0;
+	search_count?: number;
+	search_height?: number;
+	search_range?: number;
+	seconds_before_pickup?: number;
+	target_range?: Number30;
+	teleport_offset?: Number30;
+	time_of_day_range?: RangeNumberType0;
+};
